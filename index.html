@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chart.js investigation</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <section>
+        <h2>test1</h2>
+        <div class="chart__wrapper" >
+            <div class="chart__heading">
+                <div class="chart__title-wrapper">
+                    <p class=chart__title>5分超過</p>
+                </div>
+                <div class="chart__title-wrapper">
+                    <p class="chart__title">5分以内</p>
+                </div>
+            </div>
+            <div class="test">
+                <div class="chart__inner-wrapper">
+                    <canvas id="myChart"></canvas>
+                </div>
+                <!-- <div class="chart__inner-wrapper--small">
+                    <canvas id="myChart3" style="width: 100%"></canvas>
+                </div> -->
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <h2>test2</h2>
+        <div class="chart__wrapper" >
+                <div class="chart__heading">
+                    <div class="chart__title-wrapper">
+                        <p class=chart__title>ご契約中プランの上限</p>
+                    </div>
+                    <div class="chart__title-wrapper">
+                        <p class="chart__title">ご利用データ量</p>
+                    </div>
+                </div>
+                <div class="chart__inner-wrapper">
+                    <canvas id="myChart2"></canvas>
+                </div>
+            </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <script src="./js/chartjs-plugin-datalabels.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
